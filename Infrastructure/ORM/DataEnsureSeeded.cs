@@ -15,7 +15,6 @@ namespace Infrastructure.ORM
             modelBuilder.Entity<LookupType>().HasData(
             new LookupType { Id = 1, Name = "Organization Type", Alias = "Organization Type", IsDeleted = false });
 
-
             modelBuilder.Entity<Lookup>().HasData(
             new Lookup { Id = 1, LookupTypeId = 1, Name = "Super Admin", Alias = "Super Admin", RelativeOrder = 1, IsDeleted = false, },
             new Lookup { Id = 2, LookupTypeId = 1, Name = "Admin", Alias = "Admin", RelativeOrder = 2 , IsDeleted = false },
@@ -44,7 +43,7 @@ namespace Infrastructure.ORM
             modelBuilder.Entity<OrganizationRoleUser>().HasData(
             new OrganizationRoleUser { Id = 1, UserId = 1, RoleId = 1, OrganizationId = 1, IsActive = true, IsDeleted = false },
             new OrganizationRoleUser { Id = 2, UserId = 2, RoleId = 2, OrganizationId = 2, IsActive = true, IsDeleted = false },
-            new OrganizationRoleUser { Id = 3, UserId = 3, RoleId = 3, OrganizationId = , IsActive = true, IsDeleted = false });
+            new OrganizationRoleUser { Id = 3, UserId = 3, RoleId = 3, OrganizationId = 3, IsActive = true, IsDeleted = false });
 
         }
     }
