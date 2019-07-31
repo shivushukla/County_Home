@@ -7,5 +7,10 @@ namespace Core.Application
     public interface ISettings
     {
         string ConnectionString { get; }
+
+        dynamic LogConfig
+        {
+            get;
+        }
     }
 }

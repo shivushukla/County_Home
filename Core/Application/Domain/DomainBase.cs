@@ -15,5 +15,9 @@ namespace Core.Application.Domain
         public DateTime? CreatedOn { get; set; }
         public long Modifiedby { get; set; }
         public DateTime? ModifiedOn { get; set; }
+        public virtual object[] GetId()
+        {
+            return new Object[] { Id };
+        }
     }
 }
